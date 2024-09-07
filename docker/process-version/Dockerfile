@@ -12,7 +12,7 @@ RUN cp -r node_modules /node_modules
 RUN git clone https://github.com/cdnjs/glob.git /glob
 RUN npm install /glob
 
-FROM alpine:latest  
+FROM alpine:3.20.3  
 
 RUN apk add --no-cache nodejs jpegoptim zopfli brotli
 
